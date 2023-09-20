@@ -21,6 +21,10 @@ module.exports = [
           exclude: /node_modules/,
           loader: "babel-loader",
         },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
       ],
     },
     resolve: {
@@ -32,9 +36,6 @@ module.exports = [
     },
     mode: "development",
     devServer: {
-      devMiddleware: {
-        writeToDisk: true,
-      },
       static: {
         directory: path.join(__dirname, "public"),
       },

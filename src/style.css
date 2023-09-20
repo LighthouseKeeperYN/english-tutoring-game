@@ -1,0 +1,28 @@
+.button {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background: #0062DF;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.button--blue {
+  background: #0062DF;
+  cursor: pointer;
+}
+.button--blue:hover {
+  background: #0056C0;
+}
+
+.button--green {
+  background: #249C3C;
+}
+
+.button--blue:focus,
+.button--green:focus {
+  outline: none;
+}
