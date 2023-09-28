@@ -26,3 +26,22 @@
 .button--green:focus {
   outline: none;
 }
+
+.flash {
+  animation: flash 1s linear;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #c01f2b;
+    box-shadow: 0 0 3px #ff2939;
+  }
+  50% {
+    background-color: #ff2939;
+    box-shadow: 0 0 10px #ff2939;
+  }
+  100% {
+    background-color: #c01f2b;
+    box-shadow: 0 0 3px #ff2939;
+  }
+}
